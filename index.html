@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoDrive Motors - Premium Automotive Excellence | IT Vision Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Video -->
+    <video class="background-video" autoplay muted loop playsinline poster="images/image4.jpg" id="bg-video">
+        <source src="videos/video19.mp4" type="video/mp4">
+        <source src="videos/video1.mp4" type="video/mp4">
+    </video>
+    <div class="background-overlay"></div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon"></div>
+                <h2>AutoDrive Motors</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cars.html" class="nav-link">Cars</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="offers.html" class="nav-link">Offers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="wishlist.html" class="nav-link">Wishlist <span id="wishlist-count" class="badge">0</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider Section -->
+    <section class="hero-slider" id="hero-slider">
+        <div class="hero-slide active" style="--bg:url('images/image1.jpg')">
+            <div class="hero-slide-overlay"></div>
+            <div class="hero-slide-content">
+                <h1 class="hero-title">Drive the Future</h1>
+                <p class="hero-subtitle">Cutting-edge engineering. Unmatched comfort. Pure exhilaration.</p>
+                <div class="hero-ctas">
+                    <a href="cars.html" class="cta-button">Explore Cars</a>
+                    <a href="contact.html#testdrive-form" class="cta-button secondary book-test-drive">Book Test Drive</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide" style="--bg:url('images/image2.jpg')">
+            <div class="hero-slide-overlay"></div>
+            <div class="hero-slide-content">
+                <h1 class="hero-title">Luxury Meets Performance</h1>
+                <p class="hero-subtitle">Handcrafted finishes. Track-bred power. A league of its own.</p>
+                <div class="hero-ctas">
+                    <a href="gallery.html#luxury" class="cta-button">View Luxury Collection</a>
+                    <a href="pdfs/autodrive-brochure.pdf" class="cta-button secondary download-brochure" download>Download Brochure</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide" style="--bg:url('images/image3.jpg')">
+            <div class="hero-slide-overlay"></div>
+            <div class="hero-slide-content">
+                <h1 class="hero-title">Your Dream Car Awaits</h1>
+                <p class="hero-subtitle">Tailored offers. Premium service. Delivered with excellence.</p>
+                <div class="hero-ctas">
+                    <a href="offers.html" class="cta-button">Special Offers</a>
+                </div>
+            </div>
+        </div>
+        <button class="hero-slider-arrow prev" id="hero-prev" aria-label="Previous slide">
+            ←
+        </button>
+        <button class="hero-slider-arrow next" id="hero-next" aria-label="Next slide">
+            →
+        </button>
+        <div class="hero-slider-dots" id="hero-slider-dots"></div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Our Vehicle Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card fade-in">
+                    <div class="category-icon"></div>
+                    <img src="images/image4.jpg" alt="SUV" class="category-image">
+                    <h3>SUV Collection</h3>
+                    <p>Powerful and spacious vehicles for every adventure</p>
+                    <a href="cars.html?filter=suv" class="learn-more-btn">Learn More</a>
+                </div>
+                <div class="category-card fade-in">
+                    <div class="category-icon"></div>
+                    <img src="images/image2.jpg" alt="Sedan" class="category-image">
+                    <h3>Luxury Sedans</h3>
+                    <p>Elegant comfort meets exceptional performance</p>
+                    <a href="cars.html?filter=sedan" class="learn-more-btn">Learn More</a>
+                </div>
+                <div class="category-card fade-in">
+                    <div class="category-icon"></div>
+                    <img src="images/image3.jpg" alt="Electric" class="category-image">
+                    <h3>Electric Future</h3>
+                    <p>Zero emissions, maximum innovation</p>
+                    <a href="cars.html?filter=electric" class="learn-more-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Animated Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <h2 class="section-title">Our Achievements</h2>
+            <div class="stats-grid">
+                <div class="stat-item fade-in">
+                    <span class="stat-number" data-target="15000">0</span>
+                    <span class="stat-label">Cars Sold</span>
+                </div>
+                <div class="stat-item fade-in">
+                    <span class="stat-number" data-target="12000">0</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-item fade-in">
+                    <span class="stat-number" data-target="25">0</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item fade-in">
+                    <span class="stat-number" data-target="50">0</span>
+                    <span class="stat-label">Car Models</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            ★ ★ ★ ★ ★
+                        </div>
+                        <p>"Exceptional service and quality vehicles. The team at AutoDrive Motors made my car buying experience seamless and enjoyable."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/customer1.jpg" alt="Customer">
+                        <div class="author-info">
+                            <h4>Michael Johnson</h4>
+                            <span>BMW X5 Owner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            ★ ★ ★ ★ ★
+                        </div>
+                        <p>"Outstanding customer service and a fantastic selection of luxury vehicles. Highly recommend AutoDrive Motors to anyone looking for quality."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/customer2.jpg" alt="Customer">
+                        <div class="author-info">
+                            <h4>Sarah Williams</h4>
+                            <span>Mercedes C-Class Owner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            ★ ★ ★ ★ ★
+                        </div>
+                        <p>"The electric vehicle selection is impressive, and the staff is incredibly knowledgeable. Great experience from start to finish!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/customer3.jpg?v=1" alt="Customer">
+                        <div class="author-info">
+                            <h4>David Chen</h4>
+                            <span>Tesla Model S Owner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title">Our Premium Services</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Sales & Consultation</h3>
+                    <p>Expert guidance to help you find the perfect vehicle that matches your lifestyle and budget.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Service & Maintenance</h3>
+                    <p>Professional maintenance and repair services to keep your vehicle running at peak performance.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon"><i class="fas fa-credit-card"></i></div>
+                    <h3>Financing Solutions</h3>
+                    <p>Flexible financing options and competitive rates to make your dream car affordable.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon"><i class="fas fa-exchange-alt"></i></div>
+                    <h3>Trade-In Program</h3>
+                    <p>Fair market value assessments and seamless trade-in process for your current vehicle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Updates Section -->
+    <section class="news-section">
+        <div class="container">
+            <h2 class="section-title">Latest News & Updates</h2>
+            <div class="news-grid">
+                <article class="news-card fade-in">
+                    <img src="images/image1.jpg" alt="Electric Vehicle News">
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">December 15, 2024</span>
+                            <span class="news-category">Electric Vehicles</span>
+                        </div>
+                        <h3>The Future of Electric Mobility</h3>
+                        <p>Discover the latest advancements in electric vehicle technology and what it means for the automotive industry.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="news-card fade-in">
+                    <img src="images/image4.jpg" alt="Luxury Car News">
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">December 10, 2024</span>
+                            <span class="news-category">Luxury Cars</span>
+                        </div>
+                        <h3>New Luxury Models Arriving</h3>
+                        <p>Get an exclusive preview of the newest luxury vehicles joining our showroom this month.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="news-card fade-in">
+                    <img src="images/image9.jpg" alt="Service News">
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">December 5, 2024</span>
+                            <span class="news-category">Service</span>
+                        </div>
+                        <h3>Winter Service Special</h3>
+                        <p>Prepare your vehicle for winter with our comprehensive service packages and special offers.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to get the latest car launches and offers.</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" id="newsletter-email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-section">
+                    <h3>AutoDrive Motors</h3>
+                    <p>Driving innovation since 2020</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cars.html">Cars</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@autodrivemotors.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Auto Street, Car City</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoDrive Motors. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot -->
+    <div class="chatbot-widget" id="chatbot-widget">
+        <div class="chatbot-button" id="chatbot-button" aria-label="Open chat">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2a8 8 0 0 0-8 8v3a4 4 0 0 0 4 4h.8l1.9 2.5a1 1 0 0 0 1.6 0L14 17H16a4 4 0 0 0 4-4v-3a8 8 0 0 0-8-8zm-3 9h6a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2zm0-3h6a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2z"/>
+            </svg>
+        </div>
+        <div class="chatbot-popup" id="chatbot-popup">
+            <div class="chatbot-header">
+                <h4>AutoDrive Assistant</h4>
+                <button class="chatbot-close" id="chatbot-close">×</button>
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="bot-message">
+                    <p>Hello! I'm your AutoDrive assistant. Ask me about our cars!</p>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbot-input" placeholder="Type your message...">
+                <button id="chatbot-send">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
